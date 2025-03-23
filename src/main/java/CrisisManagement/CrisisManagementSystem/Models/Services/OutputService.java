@@ -1,7 +1,8 @@
 package CrisisManagement.CrisisManagementSystem.Models.Services;
 
+
 import org.springframework.stereotype.Service;
 
 @Service
-public class ChoiceService {
+public class OutputService {
 }

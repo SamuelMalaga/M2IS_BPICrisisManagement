@@ -1,12 +1,14 @@
 package CrisisManagement.CrisisManagementSystem.Controllers;
 
-import CrisisManagement.CrisisManagementSystem.Models.Services.ServiceService;
+import CrisisManagement.CrisisManagementSystem.Models.Services.DependencyService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RestController;
 
-@RestController("/service")
-public class ServiceController {
+@RestController("/dependency")
+public class DependencyController {
 
     @Autowired
-    private ServiceService serviceService;
+    private DependencyService dependencyService;
+
+
 }

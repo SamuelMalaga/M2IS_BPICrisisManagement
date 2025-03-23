@@ -4,6 +4,7 @@ import CrisisManagement.CrisisManagementSystem.Models.Embeddables.DependencyKey;
 import jakarta.persistence.*;
 
 @Entity
+@Table(name = "dependencies")
 @IdClass(DependencyKey.class)
 public class Dependency {
 
