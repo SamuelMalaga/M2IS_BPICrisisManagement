@@ -11,11 +11,11 @@ public class InputKey implements Serializable {
 
     private Long idService;
 
-    private Long numVIsOutputedBy;
+    private Long numVIsInputedBy;
 
-    public InputKey(Long idService, Long numVIsOutputedBy) {
+    public InputKey(Long idService, Long numVIsInputedBy) {
         this.idService = idService;
-        this.numVIsOutputedBy = numVIsOutputedBy;
+        this.numVIsInputedBy = numVIsInputedBy;
     }
 
     public InputKey() {
@@ -31,22 +31,22 @@ public class InputKey implements Serializable {
     }
 
     public Long getNumVIsOutputedBy() {
-        return numVIsOutputedBy;
+        return numVIsInputedBy;
     }
 
-    public void setNumVIsOutputedBy(Long numVIsOutputedBy) {
-        this.numVIsOutputedBy = numVIsOutputedBy;
+    public void setNumVIsOutputedBy(Long numVIsInputedBy) {
+        this.numVIsInputedBy = numVIsInputedBy;
     }
 
     @Override
     public boolean equals(Object o) {
         if (o == null || getClass() != o.getClass()) return false;
         InputKey inputKey = (InputKey) o;
-        return Objects.equals(idService, inputKey.idService) && Objects.equals(numVIsOutputedBy, inputKey.numVIsOutputedBy);
+        return Objects.equals(idService, inputKey.idService) && Objects.equals(numVIsInputedBy, inputKey.numVIsInputedBy);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(idService, numVIsOutputedBy);
+        return Objects.hash(idService, numVIsInputedBy);
     }
 }

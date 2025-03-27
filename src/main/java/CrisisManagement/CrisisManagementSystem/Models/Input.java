@@ -16,7 +16,7 @@ public class Input {
     private Long idService;
 
     @Id
-    private Long numVIsOutputedBy;
+    private Long numVIsInputedBy;
 
     public Long getIdService() {
         return idService;
@@ -26,11 +26,11 @@ public class Input {
         this.idService = idService;
     }
 
-    public Long getNumVIsOutputedBy() {
-        return numVIsOutputedBy;
+    public Long getNumVIsInputedByBy() {
+        return numVIsInputedBy;
     }
 
-    public void setNumVIsOutputedBy(Long numVIsOutputedBy) {
-        this.numVIsOutputedBy = numVIsOutputedBy;
+    public void setNumVIsInputedBy(Long numVIsInputedBy) {
+        this.numVIsInputedBy = numVIsInputedBy;
     }
 }

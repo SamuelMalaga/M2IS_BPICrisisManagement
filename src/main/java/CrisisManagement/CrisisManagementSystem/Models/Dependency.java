@@ -17,6 +17,14 @@ public class Dependency {
     @Column(nullable = false)
     private String dependency;
 
+    public void setIdServiceRequires(Long idServiceRequires) {
+        this.idServiceRequires = idServiceRequires;
+    }
+
+    public void setIdServiceIsRequiredBy(Long idServiceIsRequiredBy) {
+        this.idServiceIsRequiredBy = idServiceIsRequiredBy;
+    }
+
     public Long getIdServiceRequires() {
         return idServiceRequires;
     }

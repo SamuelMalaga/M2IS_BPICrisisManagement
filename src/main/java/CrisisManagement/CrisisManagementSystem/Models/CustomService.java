@@ -1,17 +1,13 @@
 package CrisisManagement.CrisisManagementSystem.Models;
 
-import CrisisManagement.CrisisManagementSystem.Models.Services.ChoiceService;
 import jakarta.persistence.*;
-import org.springframework.boot.autoconfigure.condition.ConditionalOnBean;
 
 import java.math.BigDecimal;
 import java.util.Date;
-import java.util.List;
-import java.util.Set;
 
 @Entity
 @Table(name = "services")
-public class Service {
+public class CustomService {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
