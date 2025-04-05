@@ -1,0 +1,11 @@
+/* App.css or any global CSS file */
+.service-card {
+    transition: all 0.3s ease;  /* Smooth transition for hover effect */
+  }
+  
+  .service-card:hover {
+    background-color: #636262;  /* Light background color on hover */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Add a shadow */
+    transform: translateY(-5px); /* Slight lift effect on hover */
+  }
+  

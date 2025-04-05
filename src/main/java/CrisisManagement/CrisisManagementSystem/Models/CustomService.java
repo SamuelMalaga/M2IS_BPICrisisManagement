@@ -21,7 +21,7 @@ public class CustomService {
     private String type;
 
     @Column(nullable = false)
-    private Date serviceTime;
+    private Integer serviceTime;
 
     @Column(nullable = false)
     private BigDecimal serviceCost;
@@ -46,11 +46,11 @@ public class CustomService {
         this.type = type;
     }
 
-    public Date getServiceTime() {
+    public Integer getServiceTime() {
         return serviceTime;
     }
 
-    public void setServiceTime(Date serviceTime) {
+    public void setServiceTime(Integer serviceTime) {
         this.serviceTime = serviceTime;
     }
 

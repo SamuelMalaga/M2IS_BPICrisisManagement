@@ -8,7 +8,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.math.BigDecimal;
+import java.util.ArrayList;
 import java.util.Date;
+import java.util.List;
 import java.util.Optional;
 
 @Service
@@ -20,7 +22,7 @@ public class CustomServiceService {
     public CustomService createService(
             String _serviceName,
             String _serviceType,
-            Date _serviceTime,
+            Integer _serviceTime,
             BigDecimal _serviceCost
     ){
         CustomService customService = new CustomService();
@@ -35,12 +37,7 @@ public class CustomServiceService {
         return createdCustomService;
     }
 
-    public void deleteService(Long _customServiceId){
-        customServiceRepository.deleteById(_customServiceId);
-    }
-
-    public Optional<CustomService> getServiceById(Long _customServiceId) {
-        Optional<CustomService> foundService = customServiceRepository.findById(_customServiceId);
-        return foundService;
+    public List<CustomService> getAllCustomServices(){
+        return customServiceRepository.findAll();
     }
 }
